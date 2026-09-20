@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy &middot; Sprigette</title>
+<meta name="description" content="Sprigette collects no data. Plant identification runs entirely on your device.">
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0; background: #FAF6EE; color: #2C3A33;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { display: flex; align-items: center; gap: .75rem; margin-bottom: 2.5rem; }
+  header .mark {
+    width: 40px; height: 40px; border-radius: 9px; flex: none;
+    background: linear-gradient(180deg, #76C73B 0%, #39B743 52%, #079A50 100%);
+  }
+  header .name { font-size: 1.6rem; color: #17654A; letter-spacing: .01em; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 1.25rem; color: #1C2A22; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .6rem; color: #1C2A22; }
+  a { color: #17654A; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  code { background: #F2EFE4; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid rgba(0,0,0,.09);
+    font-size: .9rem; color: rgba(0,0,0,.55);
+  }
+  footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true"></div>
+    <div class="name">Sprigette</div>
+  </header>
+  <h1>Sprigette Privacy Policy</h1>
+  <p><strong>Effective date:</strong> October 1, 2026 <strong>Applies to:</strong> Sprigette for Android (<code>com.sprigette.plantid</code>), version 1.x <strong>Published by:</strong> Northbourne Health LLC</p>
+  <p>Sprigette is a plant-identification and plant-care app that runs <strong>entirely on your device</strong>. This policy is short because there is very little to say: <strong>Sprigette does not collect, transmit, share, or sell any data.</strong></p>
+  <h2>The app has no network access</h2>
+  <p>Sprigette v1 does not request the Android <code>INTERNET</code> permission. The operating system therefore prevents the app&#x27;s own code from sending anything off your device — this is not just a promise, it is enforced by the platform. There is no Sprigette server, no account system, no cloud sync, no analytics, no advertising, and no crash-reporting SDK.</p>
+  <h2>Photos</h2>
+  <ul>
+  <li>Plant identification runs <strong>on your device</strong> using a bundled machine-learning model. Identification does not upload your photos. Saved photos may leave your device through Android backups or a backup file you export, as explained below.</li>
+  <li>Photos you capture or import are stored in Sprigette&#x27;s <strong>private app storage</strong>. Other apps cannot read them, and they are not added to your gallery.</li>
+  <li>Before a photo is saved, Sprigette <strong>re-encodes it and strips all metadata</strong>, including GPS location and capture-time EXIF tags. A photo imported from your gallery loses its location data the moment Sprigette stores its own copy. (This behavior is covered by automated tests in our build.)</li>
+  <li>You can turn off photo retention entirely with <strong>Settings → Identification → Save photos to history</strong>.</li>
+  </ul>
+  <h2>Data stored on your device</h2>
+  <p>Your garden, care schedules, scan history, photos, and preferences are stored locally in the app&#x27;s private storage.</p>
+  <h2>Backups</h2>
+  <p>Sprigette gives you two ways to keep a copy of your garden. Both are yours. Neither one sends anything to us, because there is no &quot;us&quot; to send it to — no Sprigette server exists.</p>
+  <p><strong>A backup file you make yourself.</strong> <strong>Settings → Backup → Back up my garden</strong> writes your plants, care history, and photos into a single file, and Android&#x27;s own save dialog asks you where to put it. If you choose a folder belonging to Google Drive, Dropbox, OneDrive, or any other app on your phone, that app uploads the file — Sprigette does not, and cannot. It has no network permission. Once the file leaves the app, the privacy policy that governs it is the one belonging to whatever service you chose.</p>
+  <p><strong>Android&#x27;s own backup.</strong> Sprigette allows Android Auto Backup, the system feature that copies an app&#x27;s data to your Google account so it returns when you set up a new phone. This is operated by Google, not by us: the data is stored in your Google Drive backup space, is encrypted, and we have no access to it and no way to read it. You can turn it off for every app or for Sprigette alone in <strong>Android Settings → Google → Backup</strong>, and Google&#x27;s handling of it is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Auto Backup has a size limit of 25 MB per app; if your photos take you past it, Android skips the backup, which is one reason the backup file above is the more reliable of the two.</p>
+  <p><strong>Restoring a backup adds to your garden — it never replaces it.</strong> Nothing already in your garden is deleted by a restore.</p>
+  <h2>Permissions</h2>
+  <ul>
+  <li><strong>Camera</strong> — to photograph plants. Optional: you can use gallery photos instead.</li>
+  <li><strong>Notifications</strong> — to deliver care reminders. Optional and skippable.</li>
+  <li><strong>Run at boot</strong> — to re-schedule the daily care-reminder digest after a restart.</li>
+  </ul>
+  <p>Sprigette requests <strong>no</strong> location, storage, contacts, or network permissions.</p>
+  <h2>Purchases</h2>
+  <p>Sprigette offers an optional subscription (&quot;Sprigette Premium&quot;), billed monthly or annually and processed entirely by <strong>Google Play</strong>. Some people hold a one-time &quot;Premium unlock&quot; bought before Sprigette moved to a subscription; that purchase is still honoured and is handled the same way. Sprigette never sees or stores your payment details. Google&#x27;s handling of billing data is described in the <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app stores only a local record that Premium is unlocked, plus the Play purchase token needed to acknowledge the purchase through the Play Store app on your device. Your entitlement is confirmed with Google Play each time the app starts, so a record carried over by a backup does not by itself grant Premium on a device where the purchase does not exist.</p>
+  <p>If you use the optional in-app rating prompt or the &quot;Rate Sprigette&quot; link, that interaction is handled by the Google Play Store app under Google&#x27;s policies.</p>
+  <h2>Deleting your data</h2>
+  <p>Because there are no accounts and no servers, all Sprigette data lives on your device and you can delete all of it yourself, at any time:</p>
+  <ul>
+  <li><strong>Settings → Privacy → Delete all my data</strong> erases your garden, care schedules, scan history, photos, and preferences; or</li>
+  <li><strong>uninstalling the app</strong> removes everything.</li>
+  </ul>
+  <p>There is nothing to delete on our side — Sprigette keeps no copies anywhere else. Two things are outside our reach and yours to remove separately: any backup file you saved somewhere yourself, and the Android Auto Backup copy held in your Google account, which you can delete in <strong>Android Settings → Google → Backup</strong>.</p>
+  <h2>Children</h2>
+  <p>Sprigette is intended for users aged 13 and over. It is not directed at children, and — as described above — it collects no data from anyone.</p>
+  <h2>Changes to this policy</h2>
+  <p>If a future version of Sprigette adds any online feature, this policy will be updated <strong>before</strong> that version ships, the in-app consent and settings surfaces will change accordingly, and the Play &quot;Data safety&quot; declaration will be revised to match.</p>
+  <h2>Contact</h2>
+  <p>Questions about this policy, or about the data Sprigette stores on your device: <strong>support@sprigette.com</strong></p>
+  <p>Postal mail: <strong>Northbourne Health LLC</strong>, 4021 Lester Avenue, Corona, CA 92881, United States</p>
+  <footer>
+    <a href="/">Home</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a>
+    <a href="mailto:support@sprigette.com">support@sprigette.com</a>
+    <p>Sprigette is published by Northbourne Health LLC.</p>
+  </footer>
+</div>
+</body>
+</html>
