@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy &middot; Sprigette</title>
-<meta name="description" content="Sprigette collects no data. Plant identification runs entirely on your device.">
+<meta name="description" content="Plant identification stays on your device. Crash reporting is optional.">
 <style>
   :root { color-scheme: light; }
   body {
@@ -38,10 +38,14 @@
     <div class="name">Sprigette</div>
   </header>
   <h1>Sprigette Privacy Policy</h1>
-  <p><strong>Effective date:</strong> October 1, 2026 <strong>Applies to:</strong> Sprigette for Android (<code>com.sprigette.plantid</code>), version 1.x <strong>Published by:</strong> Book Weaver Publishing, LLC</p>
-  <p>Sprigette is a plant-identification and plant-care app that runs <strong>entirely on your device</strong>. This policy is short because there is very little to say: <strong>Sprigette does not collect, transmit, share, or sell any data.</strong></p>
-  <h2>The app has no network access</h2>
-  <p>Sprigette v1 does not request the Android <code>INTERNET</code> permission. The operating system therefore prevents the app&#x27;s own code from sending anything off your device — this is not just a promise, it is enforced by the platform. There is no Sprigette server, no account system, no cloud sync, no analytics, no advertising, and no crash-reporting SDK.</p>
+  <p><strong>Effective date:</strong> October 17, 2026 <strong>Applies to:</strong> Sprigette for Android (<code>com.sprigette.plantid</code>), version 1.x <strong>Published by:</strong> Book Weaver Publishing, LLC</p>
+  <p>Sprigette identifies plants on your device and stores your garden locally. Optional crash reports and problem reports help us fix failures.</p>
+  <h2>Optional crash reports</h2>
+  <p>Crash reporting is off until you turn on <strong>Settings → Help and reporting → Send crash reports</strong>. When enabled and configured, Google Firebase Crashlytics receives technical failure details, stack traces, app version, device and operating-system information, an installation identifier, and app session timing used to measure crash frequency. We use this information to investigate failures. We do not attach your photos, garden records, purchase tokens, or contact details. Exception messages may contain information about the operation that failed. Google processes this information under its <a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a>.</p>
+  <p>You can turn reporting off in Settings. Future automatic uploads stop after the app restarts. A report already uploading may finish. Turning reporting off does not recall reports already sent. Your reporting choice is not included in garden backups or phone-to-phone transfers. Reporting starts off on a new installation.</p>
+  <p>The app has network permission for crash reporting. Plant identification stays on your device. We do not include Google Analytics, advertising, or a garden cloud-sync service.</p>
+  <h2>Reports you send yourself</h2>
+  <p><strong>Settings → Help and reporting → Report a problem</strong> opens a form. You can describe the problem and optionally include the app and Android versions. It opens an email draft to <strong>support@sprigette.com</strong>. Review it and send it in your email app. Opening a draft does not send it. No photos, garden records, purchase details, or logs are attached automatically. Your email provider handles delivery. We receive the message and sender details when you send it, and use them to investigate and reply. Do not include passwords or payment details. You can copy the report if no email app is available.</p>
   <h2>Photos</h2>
   <ul>
   <li>Plant identification runs <strong>on your device</strong> using a bundled machine-learning model. Identification does not upload your photos. Saved photos may leave your device through Android backups or a backup file you export, as explained below.</li>
@@ -52,8 +56,8 @@
   <h2>Data stored on your device</h2>
   <p>Your garden, care schedules, scan history, photos, and preferences are stored locally in the app&#x27;s private storage.</p>
   <h2>Backups</h2>
-  <p>Sprigette gives you two ways to keep a copy of your garden. Both are yours. Neither one sends anything to us, because there is no &quot;us&quot; to send it to — no Sprigette server exists.</p>
-  <p><strong>A backup file you make yourself.</strong> <strong>Settings → Backup → Back up my garden</strong> writes your plants, care history, and photos into a single file, and Android&#x27;s own save dialog asks you where to put it. If you choose a folder belonging to Google Drive, Dropbox, OneDrive, or any other app on your phone, that app uploads the file — Sprigette does not, and cannot. It has no network permission. Once the file leaves the app, the privacy policy that governs it is the one belonging to whatever service you chose.</p>
+  <p>Sprigette gives you two ways to keep a copy of your garden. Both are yours. Neither backup option sends your garden to us.</p>
+  <p><strong>A backup file you make yourself.</strong> <strong>Settings → Backup → Back up my garden</strong> writes your plants, care history, and photos into a single file, and Android&#x27;s own save dialog asks you where to put it. If you choose a folder belonging to Google Drive, Dropbox, OneDrive, or any other app on your phone, that app uploads the file — Sprigette does not upload the backup itself. Once the file leaves the app, the privacy policy that governs it is the one belonging to whatever service you chose.</p>
   <p><strong>Android&#x27;s own backup.</strong> Sprigette allows Android Auto Backup, the system feature that copies an app&#x27;s data to your Google account so it returns when you set up a new phone. This is operated by Google, not by us: the data is stored in your Google Drive backup space, and we have no access to it and no way to read it. Sprigette only lets Android make this backup when Android can encrypt it end to end with your phone&#x27;s screen lock (your PIN, pattern, or password). If your phone has no screen lock, or runs Android 8, Android does not back Sprigette up to your Google account at all. You can turn it off for every app or for Sprigette alone in <strong>Android Settings → Google → Backup</strong>, and Google&#x27;s handling of it is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Auto Backup has a size limit of 25 MB per app; if your photos take you past it, Android skips the backup, which is one reason the backup file above is the more reliable of the two.</p>
   <p><strong>Moving to a new phone.</strong> On Android 9 or later, when you move to a new phone with a cable or a direct phone-to-phone transfer, Android can copy the same data straight to the new phone. That copy goes from one phone to the other, not through Google&#x27;s servers, so it does not need a screen lock.</p>
   <p><strong>Restoring a backup adds to your garden — it never replaces it.</strong> Nothing already in your garden is deleted by a restore.</p>
@@ -62,27 +66,24 @@
   <li><strong>Camera</strong> — to photograph plants. Optional: you can use gallery photos instead.</li>
   <li><strong>Notifications</strong> — to deliver care reminders. Optional and skippable.</li>
   <li><strong>Run at boot</strong> — to re-schedule the daily care-reminder digest after a restart.</li>
+  <li><strong>Network access</strong> — for optional crash reports.</li>
   </ul>
-  <p>Sprigette requests <strong>no</strong> location, storage, contacts, or network permissions.</p>
+  <p>Sprigette requests no location, storage, or contacts permissions.</p>
   <h2>Purchases</h2>
-  <p>Sprigette offers an optional subscription (&quot;Sprigette Premium&quot;), billed monthly or annually and processed entirely by <strong>Google Play</strong>. Some people hold a one-time &quot;Premium unlock&quot; bought before Sprigette moved to a subscription; that purchase is still honoured and is handled the same way. Sprigette never sees or stores your payment details. Google&#x27;s handling of billing data is described in the <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app stores only a local record that Premium is unlocked, plus the Play purchase token needed to acknowledge the purchase through the Play Store app on your device. Your entitlement is confirmed with Google Play each time the app starts, so a record carried over by a backup does not by itself grant Premium on a device where the purchase does not exist.</p>
+  <p>Sprigette offers an optional subscription (&quot;Sprigette Premium&quot;), billed monthly or annually and processed entirely by <strong>Google Play</strong>. Sprigette also supports restoring a one-time Premium unlock if your Google Play account holds one. Sprigette does not receive your card or bank account details. Google&#x27;s handling of billing data is described in the <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app stores signed purchase evidence locally, plus purchase tokens needed to acknowledge purchases through the Play Store app. It refreshes purchase status with Google Play when it can connect. If Google Play cannot be reached, previously verified evidence may keep Premium enabled until a successful refresh. Restoring a backup does not establish that the current Google account owns an active subscription.</p>
   <p>If you use the optional in-app rating prompt or the &quot;Rate Sprigette&quot; link, that interaction is handled by the Google Play Store app under Google&#x27;s policies.</p>
   <h2>Deleting your data</h2>
-  <p>Because there are no accounts and no servers, all Sprigette data lives on your device and you can delete all of it yourself, at any time:</p>
-  <ul>
-  <li><strong>Settings → Privacy → Delete all my data</strong> erases your garden, care schedules, scan history, photos, and preferences; or</li>
-  <li><strong>uninstalling the app</strong> removes everything.</li>
-  </ul>
-  <p>There is nothing to delete on our side — Sprigette keeps no copies anywhere else. Two things are outside our reach and yours to remove separately: any backup file you saved somewhere yourself, and the Android Auto Backup copy held in your Google account, which you can delete in <strong>Android Settings → Google → Backup</strong>.</p>
+  <p>You can erase your garden, care schedules, scan history, photos, and preferences with <strong>Settings → Privacy → Delete all my data</strong>, or by uninstalling the app. The in-app deletion also turns crash reporting off.</p>
+  <p>Local deletion does not erase problem emails or crash reports already sent. Contact <strong>support@sprigette.com</strong> about those reports. Reports may not contain enough information to link them to a particular person. Backup files and Android Auto Backup copies are separate. Remove them through the service where you saved them or Android&#x27;s backup settings.</p>
   <h2>Children</h2>
-  <p>Sprigette is intended for users aged 13 and over. It is not directed at children, and — as described above — it collects no data from anyone.</p>
+  <p>Sprigette is intended for users aged 13 and over. It is not directed at children.</p>
   <h2>Changes to this policy</h2>
-  <p>If a future version of Sprigette adds any online feature, this policy will be updated <strong>before</strong> that version ships, the in-app consent and settings surfaces will change accordingly, and the Play &quot;Data safety&quot; declaration will be revised to match.</p>
+  <p>We will update this policy when our data handling changes. The app settings and store declarations must match the version we release.</p>
   <h2>Contact</h2>
   <p>Questions about this policy, or about the data Sprigette stores on your device: <strong>support@sprigette.com</strong></p>
   <p>Postal mail: <strong>Book Weaver Publishing, LLC</strong>, 4021 Lester Avenue, Corona, CA 92881, United States</p>
   <footer>
-    <a href="/">Home</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a>
+    <a href="./">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
     <a href="mailto:support@sprigette.com">support@sprigette.com</a>
     <p>Sprigette is published by Book Weaver Publishing, LLC.</p>
   </footer>
